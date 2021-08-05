@@ -1,0 +1,1100 @@
+/* ---------------------------- Generales ------------------------------------------ */
+
+@font-face {
+    font-family: "Chaparral-Pro-Bold" ;
+    src: url(/ChaparralPro-Bold.otf);
+}
+
+@font-face {
+    font-family: "Chaparral-Pro-Regular" ;
+    src: url(/ChaparralPro-Regular.otf);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    background: #E5E5E5;
+    background-color: transparent;
+}
+
+body{
+    font-family: "Chaparral-Pro-Regular";
+    padding: 115px 20px 0;
+    background-image:url(./web-design-2906159__480\ 1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+}
+
+li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: inherit;
+}
+
+h2{
+    font-size: 50px;
+    font-family:  "Chaparral-Pro-Regular";
+    color: black;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 50px;
+    margin-top: 5rem;
+}
+
+h4{
+    font-family:"Chaparral-Pro-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #0B447F;
+    cursor:pointer;
+}
+
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+
+/* --------------------------- /Generales -------------------------------------------- */
+
+/* ----------------------------------------- menu principal ------------------------------------------------ */
+
+header{
+    display: flex;
+    width: 100%;
+    height: 105px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* background: rgba(78, 143, 196, 0.9); */
+    background: rgba(8, 77, 134, 0.9);
+    box-shadow: inset 0px 4px 4px rgba(205, 120, 141, 0.5);
+    
+}
+
+
+.logo{
+    position: absolute;
+    padding: 10px 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    width: 20px;
+    height: 20px;
+}
+
+.img-logo{
+    position: absolute;
+    height: 70px;
+    z-index: 1;
+    border-radius: 100px;
+    /* background-color: rgba(205, 120, 141, 0.5); */
+    background: white;
+}
+
+.logo:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite; 
+    width: 100%;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.botones{
+    list-style: none;
+    padding: 30px 15px;
+    font-size: 36px;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(8, 77, 134, 0.3);
+    cursor: pointer;
+    background:none;
+    
+}
+
+.botones:hover{
+    /* color:#0B447F; */
+    color: black;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: inherit;
+    margin-left: 40%;
+    background:none;
+
+}
+
+.inicio{
+    display: flex;
+    background:none;
+}
+
+.redes{
+    position: absolute;
+    width: 430px;
+    height: 80px;
+    left: 130px;
+    top: 68px;
+    background: rgba(8, 77, 134, 0.3);
+    border: 1px solid rgba(53, 57, 60, 0.4);
+    box-sizing: border-box;
+    border-radius: 50px;  
+}
+
+.logos-redes{
+    text-decoration: none;
+    padding: 10px 10px 9px 70px;
+}
+
+.red{
+    
+    text-decoration: inherit;
+}
+
+.menu-desplegable{
+    position: relative;
+    height: 50px;
+    display: flex;
+}
+
+.menu-desplegable .redes{
+    border: 0;
+    width: 0px;
+    padding: 0;
+    transition: width 0.5s linear;
+}
+
+.menu-desplegable .redes .logos-redes .red{
+    border: 0;
+    width: 0px;
+    padding: 0;
+    transition: width 0.5s linear;
+}
+
+.menu-desplegable .active .redes {
+    width: 300px;
+}
+
+.redes .active .red{
+    width: 200px;
+}
+
+
+/* -------------------------------------------------/ menu principal ----------------------------- */
+
+
+/*----------------------------------- Slider ------------------------------------------------ */
+.container-inicio{
+    display: flex;
+    margin: 5px;
+    gap: 2rem;
+}
+
+.img-mia{
+    margin: 5px 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.text1{
+    padding: 0px 20px 10px;
+    font-size: 24px;
+    width: 50%;
+    background-color: rgba(190, 149, 103, 0.6);
+    border-radius: 8px;
+}
+
+.david{
+    display:flex ;
+    justify-content: center;
+    float: right;
+    margin: 30px;
+    color:rgba(4, 80, 129, 0.9)
+}
+
+.container-all{
+    position: relative;
+    max-width: 45%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.slide{
+    display: flex;
+    transform: translate3d(0,0,0);
+    transition: all 1000ms;
+    animation-name: autoplay;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+    overflow: hidden;
+    cursor:grabbing;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.pagination-item:hover{
+    transform: scale(2);
+}
+
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+    background: #fff;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background: #fff;
+}
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+    background: #fff;
+}
+
+input[id="4"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 3), 0, 0);
+}
+
+input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
+    background: #fff;
+}
+
+input[id="5"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 4), 0, 0);
+}
+
+input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
+    background: #fff;
+}
+
+@keyframes autoplay{
+    20%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+
+    40%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+
+    60%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+    80%{
+        transform: translate3d(calc(-100% * 3), 0, 0);
+    }
+    100%{
+        transform: translate3d(calc(-100% * 4), 0, 0);
+    }
+}
+
+/* -------------------------------------------- /Slider ----------------------------------------------------- */
+
+
+
+/* ------------------------------------------ sobre mi -------------------------------------------------------- */
+
+.about{
+    display: flex;
+    margin: 50px;
+    
+}
+
+.formacion{
+    border-radius: 8px;
+}
+
+.text2{
+    padding: 0px 20px 10px;
+    font-size: 24px;
+    width: 100%;
+    background-color: rgba(190, 149, 103, 0.6);
+    border-radius: 8px;
+}
+
+.academia{
+    display: flex;
+    justify-content: center;
+    color: rgba(4, 80, 129, 0.9);
+    margin: 20px;
+    font-family: "Chaparral-Pro-Regular" ;
+    font-size: 30px;
+}
+
+.graficos{
+    width: 50%;
+    padding: 10px 60px 10px 50px;
+}
+
+.porciento{
+    font-family: "Chaparral-Pro-Regular";
+    font-size: 20px;
+    color:black;
+    margin-left: 410px;
+    top:0;
+
+}
+
+progress{
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgba(241, 241, 241, 1); 
+    border: 1px solid #000000; 
+    height: 25px; 
+    width: 400px; 
+    border-radius: 30px; 
+}
+
+progress:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+progress::-webkit-progress-bar { 
+    background-color: rgba(241, 241, 241, 1); 
+    border-radius: 30px;
+}
+
+progress::-webkit-progress-value { 
+    background: rgba(4, 80, 129, 0.9); 
+    border-radius: 32px;
+    margin-left: 0.5px;
+}
+
+
+
+
+/* -------------------------------------------------------- /sobre mi --------------------------------------------------------- */
+
+
+/* -------------------------------------------------------- Proyectos --------------------------------------------------------- */
+
+
+.proyectos{
+    font-family: "Chaparral-Pro-Regular";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+    overflow: hidden;
+	margin: 0;
+}
+
+.container-panel {
+	display: flex;
+	width: 90vw;
+}
+
+.panel {
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	color: #fff;
+	flex: 0.5;
+	cursor: pointer;
+	height: 80vh;
+	position: relative;
+	margin: 10px;
+	transition: flex 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
+    border: #35393C;
+}
+
+.panel h3 {
+	font-size: 24px;
+	top: 40px;
+	left: 25px;
+	margin: 0;
+    opacity: 0;
+    position: absolute;
+	transition: opacity 0s ease-in 0s;
+    color: rgba(4, 80, 129, 0.9);
+}
+
+.panel.active {
+	flex: 5;
+}
+
+.panel.active h3 {
+	opacity: 1;
+	transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+@media screen and (max-width: 480px) {
+	.container {
+		width: 100vw;
+	}
+	
+	.panel:nth-of-type(4) {
+		display: none;
+	}
+	
+	.panel:nth-of-type(5) {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+} 
+
+/* -------------------------------------------------------- /Proyectos --------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-successful{
+    background-image: "./LogoDavid-05.png";
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- footer ----------------------------------------------- */
+.footer{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    bottom: 0px;
+    background: rgba(78, 143, 196, 0.9);
+    box-shadow: inset 0px 4px 4px rgba(205, 120, 141, 0.5);
+    margin-top: 20px;
+}
+
+.copyright{
+    position: absolute;
+    width: 100%px;
+    height: 16px;
+    left: 401px;
+    padding: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    
+}
+
+.marca{
+    position: absolute;
+    height: 46px;
+    margin-top: 5px;
+
+
+}
+
+/* ------------------------------------------------ /footer ---------------------------------------------------- */
+
+
+
+/* -------------------------------------- @media ----------------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+    
+
+    header{
+        display: flex;
+
+        width: 10%;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-radius: 100px;
+    }
+
+    .img-logo{
+        position: absolute;
+        height: 80px;
+        z-index: 1;
+        border-radius: 100px;
+    }
+    
+    .logo:hover{
+        animation: shake 0.5s;
+        animation-iteration-count: infinite; 
+    }
+    
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+
+
+      .botones{
+        position: absolute; 
+        right:  -990%; 
+        transition: 0.3s; 
+        padding: 15px; 
+        width: 135px; 
+        text-decoration: none; 
+        font-size: 20px; 
+        color: white; 
+        border-radius: 5px 0 0 5px;
+        text-align:right;
+    }
+
+    .botones:hover{
+        right:  -900%;
+    }
+
+    #inicio{
+        top: 20px;
+        background-color: #0B447F;
+    }
+
+    #about {
+        top: 80px;
+        background-color: #0B447F; 
+    }
+
+    #projects {
+        top: 140px;
+        background-color: #0B447F; 
+    }
+      
+    #contact {
+        top: 200px;
+        background-color: #0B447F;
+    }
+
+    .container-inicio{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .text1{
+        width: 50%;
+        margin: auto;
+        padding-bottom: 3rem;
+    }
+    
+    .container-all{
+        position: relative;
+        max-width: 50%;
+        border-radius: 5px;
+        overflow: hidden;
+        left: 24%;
+        
+        
+    }
+
+    .about{
+        display: flex;
+        margin: 0px;
+        flex-direction: column;
+    }
+    
+    .formacion{
+        width: 45%;
+        margin: auto;
+        padding: 10px 10px 20px 10px;
+    }
+
+
+    .graficos{
+        width: 55%;
+        margin: auto;
+        padding: 10px 10px 10px 10px;
+    }
+
+
+    .container-panel {
+        display: flex;
+        width: 60vw;
+    }
+
+    .copyright{
+        position: absolute;
+        width: 100%px;
+        height: 16px;
+        left: 25%;
+        padding: 14px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #000000;
+        
+    }
+    
+    .marca{
+        position: absolute;
+        height: 40px;
+        margin-top: 5px;
+    
+    
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .container-inicio{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .text1{
+        width: 45%;
+        margin: auto;
+        padding-bottom: 3rem;
+    }
+    
+    .container-all{
+        position: relative;
+        max-width: 50%;
+        border-radius: 5px;
+        overflow: hidden;
+        left: 28%;
+        
+        
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    body{
+        font-family: "Chaparral-Pro-Regular";
+    
+    }
+
+    header{
+        display: flex;
+        width: 10px;
+        position: fixed;
+        top: 0;
+        left:-25px;
+        border-radius: 100px;
+    }
+
+    .img-logo{
+        position: absolute;
+        height: 50px;
+        z-index: 1;
+        border-radius: 100px;
+    }
+    
+    .logo:hover{
+        animation: shake 0.5s;
+        animation-iteration-count: infinite; 
+    }
+    
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+
+
+      .botones{
+        position: absolute; 
+        right:  -798px; 
+        transition: 0.3s; 
+        padding: 15px; 
+        width: 135px; 
+        text-decoration: none; 
+        font-size: 20px; 
+        color: white; 
+        border-radius: 5px 0 0 5px;
+        text-align:right;
+    }
+
+    .botones:hover{
+        right:  -700px;
+    }
+
+    #inicio{
+        top: 20px;
+        background-color: #0B447F;
+    }
+
+    #about {
+        top: 80px;
+        background-color: #0B447F; 
+    }
+
+    #projects {
+        top: 140px;
+        background-color: #0B447F; 
+    }
+      
+    #contact {
+        top: 200px;
+        background-color: #0B447F;
+    }
+
+    .container-inicio{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .text1{
+        width: 50%;
+        margin: auto;
+        padding-bottom: 3rem;
+    }
+    
+    .container-all{
+        position: relative;
+        max-width: 50%;
+        border-radius: 5px;
+        overflow: hidden;
+        left: 24%;
+        
+        
+    }
+
+    .about{
+        display: flex;
+        margin: 0px;
+        flex-direction: column;
+    }
+    
+    .formacion{
+        width: 45%;
+        margin: auto;
+        padding: 10px 10px 20px 10px;
+    }
+
+
+    .graficos{
+        width: 55%;
+        margin: auto;
+        padding: 10px 10px 10px 10px;
+    }
+
+
+    .container-panel {
+        display: flex;
+        width: 60vw;
+    }
+
+    .copyright{
+        position: absolute;
+        width: 100%px;
+        height: 16px;
+        left: 25%;
+        padding: 14px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #000000;
+        
+    }
+    
+    .marca{
+        position: absolute;
+        height: 40px;
+        margin-top: 5px;
+    
+    
+    }
+
+}

@@ -1,0 +1,237 @@
+@import url(http://fonts.google.com/specimen/Petrona?query=Petronattps://fonts.google.com/);
+
+@font-face {
+    font-family: 'Fuente';
+    src: url(./Petrona-Regular.ttf);
+}
+body{
+    margin: 0;
+    margin-bottom: 1000px;
+    background-size: cover;
+    background-image: url("./Assets/Fondo-guitarra.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+}
+
+#my{
+    zoom: 80%;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-width: auto;
+    height: 120%;
+    background:#F5F5F5;
+   
+}
+
+.style-letter{
+    font-family: 'Fuente';
+    color: black;
+    font-size: 24px;
+    text-decoration: inherit;
+}
+
+.style-raya{
+    font-family: 'Fuente';
+    color: black;
+    font-size: 24px;
+}
+
+.buttom-banner{
+   
+    width: 141px;
+    height: 48px;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+
+
+.header{
+    width:max-content;
+    height:unset;
+    justify-content: space-between;
+    background: #F5F5F5;
+}
+ 
+
+figure{
+    float: left;
+    height: 423px;
+    flex-direction: row;
+    left: 20px;
+    top: 226px;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+}
+
+.arrow-hist{
+    float:right;
+    display: flex;
+    align-items: center;
+   
+}
+
+
+
+.Text1{
+    position: absolute;
+    width: 618px;
+    height: 441px;
+    left: 788px;
+    top: 226px;
+    font-family: Petrona;
+    font-style: normal; 
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    color: #000000;
+    float: right;
+}
+
+.Text2{
+    position: absolute;
+    width: 1326px;
+    height: 90px;
+    left: 80px;
+    top: 692px;
+    font-family: Petrona;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    color: #000000;
+}
+
+.Text-hist{
+    width: 890px;
+    height: 340px;
+    left: 450px;
+    top: 230px;
+    font-size: 30px;
+    line-height: 34px;
+}
+
+.song{
+    float: left;
+    height: 850px;
+    width: 600px;
+    flex-direction: row;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+} 
+
+ol{
+    font-family: Petrona;
+    position: absolute;
+    width: 618px;
+    height: 441px;
+    left: 788px;
+    top: 226px;
+    font-family: Petrona;
+    font-style: normal; 
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    color: #000000;
+    float: right;
+    text-decoration: inherit;
+}
+
+
+/* .albums{
+    display:flex;
+    align-items: center;
+    
+} */
+
+footer{
+    position:fixed;
+   left: 5px;
+   bottom: 20px;
+   height: 30px;
+   width:100%;
+   background-color: #F5F5F5;
+   height:min-content;
+
+} 
+
+.frases{ 
+    display: flex;
+    align-items:center;
+    width: 1250px;
+    height: 59px;
+    left: 50px;
+    top: 0px;
+    font-family:'Fuente'
+} 
+
+.net{
+    flex-direction: row-reverse;
+
+    display: flex;
+    align-items: center;
+}
+
+.imagen{
+    width:60%;
+	height:40%;
+}
+
+.albums{
+    max-width: 800px;
+    margin-top: 30px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px ;
+    grid-template-rows: 300px 300px 300px;
+    grid-gap: 2rem;
+    padding: 1rem;
+}
+
+
+
+
+.items-1{
+    grid-row-start: span;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+	header nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1024px){
+    
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px){
+
+}
+    
