@@ -587,181 +587,6 @@ input{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.form-successful{
-    background-image: "./LogoDavid-05.png";
-    background-repeat: no-repeat;
-}
-
-
-
-
-
-
-
-
-
 /* --------------------------------------- footer ----------------------------------------------- */
 .footer{
     display: flex;
@@ -803,16 +628,18 @@ input{
 
 
 
+
+
+
 /* -------------------------------------- @media ----------------------------------------- */
 
 @media only screen and (max-width: 1200px) {
     
 
+
     header{
         display: flex;
-
         width: 10%;
-        
         position: fixed;
         top: 0;
         left: 0;
@@ -861,7 +688,7 @@ input{
 
       .botones{
         position: absolute; 
-        right:  -990%; 
+        right:-990% ; 
         transition: 0.3s; 
         padding: 15px; 
         width: 135px; 
@@ -873,7 +700,7 @@ input{
     }
 
     .botones:hover{
-        right:  -900%;
+        right:-900% ; 
         color: white;
     }
 
@@ -1000,23 +827,71 @@ input{
 
 @media only screen and (max-width: 800px) {
 
+    *{
+        margin: 0;
+    }
+    
+        body{
+            font-family: "Chaparral-Pro-Regular";
+            display: flexbox;
+            width: auto;
+            padding: 0;
+        }
 
+        header{
+            position: fixed;
+            display: flex;
+            width: 10px;
+            position: fixed;
+            top: 0;
+            right: 5rem;
+            border-radius: 100px;
+        }
+        .botones{
+            position: fixed;
+            list-style: none;
+            cursor: pointer;
+            left: 34rem;
+        }
+    
+        .botones:hover{
+            left:  30rem;
+            color: white;
+        }
 }
 
 @media only screen and (max-width: 480px) {
+*{
+    margin: 0;
+}
 
     body{
         font-family: "Chaparral-Pro-Regular";
-    
+        display: flexbox;
+        width: auto;
+        padding: 0;
     }
 
     header{
+        position: fixed;
         display: flex;
         width: 10px;
         position: fixed;
         top: 0;
         left:-25px;
         border-radius: 100px;
+    }
+
+    .botones{
+        position: fixed;
+        list-style: none;
+        cursor: pointer;
+        left: 20%;
+    }
+
+    .botones:hover{
+        left:  90%;
+        color: white;
     }
 
     .img-logo{
