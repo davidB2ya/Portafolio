@@ -11,26 +11,28 @@
 <body>
    
     <header>
-        <div class="menu-desplegable ">
-            <div class="redes ">
-                <div class="logos-redes">
-                    <a href="#"><img class="red" src="./assets/Group.png"></a>
-                    <a href="#"><img class="red" src="./assets/Group-1.png"></a>
-                    <a href="#"><img class="red" src="./assets/Vector-2.png"></a>
-                    <a href="#"><img class="red" src="./assets/Vector.png"></a>
-                    <a href="#"><img class="red" src="./assets/Vector-1.png"></a>
-                </div>
-            </div>
-            <button class="logo">
-                <img class="img-logo" src="./assets/Logo David-04.png">
-            </button>
+        <div class="logos-redes">
+            
+            <img class="img-logo" src="./assets/Logo David-04.png">
+
+            <div class="red position1"><a href="#"><img src="./assets/Group.png"></a></div>          
+            <div class="red position2"><a href="#"><img src="./assets/Group-1.png"></a> </div>               
+            <div class="red position3"><a href="#"><img src="./assets/Vector-2.png"></a></div>
+            <div class="red position4"><a href="#"><img src="./assets/Vector.png"></a></div> 
+            <div class="red position5"><a href="#"><img src="./assets/Vector-1.png"></a></div>
+
         </div>
+           
+            <!-- <button class="logo">
+                <img class="img-logo" src="./assets/Logo David-04.png">
+            </button> -->
+        
         <div class="menu">
             <ul class="inicio">
-                <a href="#"><li class="botones" id="inicio">Inicio</li></a>
-                <a href="#section-2"><li class="botones" id="about">Sobre mi</li></a>
-                <a href="#section-3"><li class="botones" id="projects">Proyectos</li></a>
-                <a href="#section-4"><li class="botones" id="contact">Contacto</li></a>
+                <a href="#"><li class="botones" id="inicio"><i class="fas fa-home"></i>Inicio</li></a>
+                <a href="#section-2"><li class="botones" id="about"><i class="fas fa-address-card"></i>Sobre mi</li></a>
+                <a href="#section-3"><li class="botones" id="projects"><i class="fas fa-tasks"></i>Proyectos</li></a>
+                <a href="#section-4"><li class="botones" id="contact"><i class="fas fa-address-book"></i>Contacto</li></a>
             </ul>
         </div>
     </header>
@@ -42,10 +44,11 @@
         <img class="img-mia" src="./assets/WhatsApp Image 2021-08-05 at 2.18 1.png">
 
         <span class="david">David Bedoya Hernández <br>
-            Full-Stark Wed Developer
+            Full-Stack Web Developer
         </span>
         
-        <p>Soy un Joven cubano residente en Colombia que busca retos nuevos en la rama de las Tecnologías tanto como Full-Stark Wed Developer como la rama de la electrónica. He participado en equipos de investación y desarrollo en los cual diseñabamos y fabricabamos equipos de telecuminicaciones. Como desarrollador forme parte de la segunda cohorte del bookcamp de la Fundacion Educamas. Ademas de tener un tecnico en sistemas.</p>
+        <p>Soy un Joven cubano, residente en Colombia y Técnico en Sistemas, que busca retos nuevos en la rama de las Tecnologías (tanto como Full-Stack Wed Developer como en la Electrónica). Participé activamente durante cuatro años en equipos de investación y desarrollo, con enfoque en diseño y fabricación de equipos de telecomunicaciones y automatización. <br>
+        Como desarrollador formé parte de la segunda cohorte del Bootcamp de la Fundación Educamas.</p>
     </div>
 
 
@@ -103,9 +106,20 @@
 <section class="about">
     
     <div class="formacion">   
+        <span class="academia"><strong>Habilidades</strong> </span>
+        <p class="text2">    
+        Personalmente, me caracterizo por mi capacidad de trabajo en equipo, creatividad, gran responsabilidad, adaptabilidad a nuevos cambios o retos, compromiso con mis labores y mi actuar basado en principios.
+        </p>
+        <span class="academia"><strong>Formación Académica</strong></span> 
         <p class="text2">
-            <span class="academia">Formación Académica</span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro maxime, assumenda quisquam est ipsa aspernatur vero dolorem molestias quia possimus nemo, rem temporibus repudiandae non consequuntur quidem dolore delectus eaque aliquam similique. Officiis aliquid rem iusto alias, fugiat iste, libero beatae consequuntur consequatur repellat expedita sit. Praesentium, reprehenderit fugiat! Vero distinctio eligendi quae provident magni, fugit deleniti assumenda quis quisquam aut odio. Accusantium dolor dolorem necessitatibus delectus iusto sed suscipit exercitationem earum voluptatibus aperiam repellendus corporis expedita minus, quos esse sint quia nisi fugiat recusandae consequuntur molestiae. Amet nam fugit odit illum esse accusantium quam hic beatae suscipit id!</p>
+            Instituto Politécnico de Informática "Osvaldo Herrera González" Técnico Medio en Informática-2016</p>
+        <span class="academia"><strong>Experiencia Laboral</strong></span>   
+        <p class="text2">
+        Centro de Investigación, Desarrollo y Producción “Grito de Baire”<br>
+        Técnico General en electrónica, automática y telecomunicación
+        2017 -2020. <br>Durante este tiempo estuve encargado de una línea de producción y formando parte de un equipo de investigación de equipos de telecomunicaciones y automatizados.
+        Conocimientos avanzados en electrónica( montaje, revisión , reparación y mantenimiento de diferentes equipos eléctricos tanto de audio como telecomunicaciones o procesadores digitales entre otros además de interpretar planos eléctricos y datasheet )
+        </p>        
         
     </div>
 
@@ -181,21 +195,21 @@
 
         
 </section>
-<a href="#"><h4>Más Información</h4></a>
+<a href="https://github.com/davidB2ya/Portafolio"><h4>Más Información</h4></a>
 
 <a name="section-4"></a>
 <h2 id="text3">Contáctame</h2>
-<section class="form">
+<section class="formulario">
 
     <form action="https://formsubmit.co/dbedoya0408@gmail.com" method="POST">
-        <input type="name" name="name" placeholder = "Por favor su nombre" required>
-        <input type="email" name="email" placeholder = "Dirección de correo electrónico" required>
-        <input type="phone" name="phone" placeholder = "Número Telefónico" required>
-        <input type="text" name="name" placeholder = "Mensaje ..." required >
+        <input id="nombre" type="name" name="name" placeholder = "Digite su nombre" required>
+        <input id="correo" type="email" name="email" placeholder = "Dirección de correo electrónico" required>
+        <input id="tel" type="phone" name="phone" placeholder = "Número Telefónico" required>
+        <input id="msm" type="text" name="name" placeholder = "Mensaje ..." required >
         <input type = "hidden" name = "_ subject" value = "¡Nuevo envío de Portafolio!">
         <input type = "hidden" name = "_ captcha" value = "false">
         <input type = "hidden" name = "_ next" value = "./form successful.html">
-        <button type="submit">Enviar</button>
+        <button id="enviar" type="submit">Enviar</button>
    </form>
     
 
@@ -207,5 +221,6 @@
     </footer>
 
     <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>
